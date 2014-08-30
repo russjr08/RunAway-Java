@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="50" height="18" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="Main" tilewidth="32" tileheight="32">
+  <image source="../tiles/Spritesheet.png" trans="ffffff" width="128" height="128"/>
+  <tile id="0">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+  <tile id="1">
+   <properties>
+    <property name="solid" value="true"/>
+   </properties>
+  </tile>
+  <tile id="2">
+   <properties>
+    <property name="solid" value=""/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="Tile Layer 1" width="50" height="18">
+  <data encoding="base64" compression="zlib">
+   eJxjYBgFo2AUjIJRMAqoC5hx4FEwCgiB0TQDASMl/wwXfw0Gf1AjrdDLH0zDBDMOEwwA0h8A1g==
+  </data>
+ </layer>
+ <objectgroup name="collisions" width="50" height="18">
+  <object type="collision" x="1" y="353" width="127" height="29">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object type="collision" x="224" y="257" width="191" height="30">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object x="225" y="483" width="93" height="26">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object x="514" y="387" width="156" height="29">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object x="769" y="418" width="30" height="92">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object x="3" y="514" width="1597" height="61">
+   <properties>
+    <property name="collision" value=""/>
+   </properties>
+  </object>
+  <object x="14" y="432">
+   <properties>
+    <property name="spawnpoint" value=""/>
+   </properties>
+  </object>
+ </objectgroup>
+</map>
