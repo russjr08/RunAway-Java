@@ -27,12 +27,12 @@ public class HealthBarComponent implements IComponent {
             // OUTLINE
             renderer.begin(ShapeRenderer.ShapeType.Line);
             renderer.setColor(getColor());
-            renderer.rect(entity.getPos().x - (entity.getBoundingBox().getWidth() / 2) - 20, entity.getPos().y + entity.getBoundingBox().getHeight() + 4, 80, 8);
+            renderer.rect(entity.getPos().x - (entity.getBoundingBox().getWidth() / 2) - (entity.getBoundingBox().getWidth() / 2) / 2, entity.getPos().y + entity.getBoundingBox().getHeight() + 4, 80, 8);
             renderer.end();
 
             // Shade in the health
             renderer.begin(ShapeRenderer.ShapeType.Filled);
-            renderer.rect(entity.getPos().x - (entity.getBoundingBox().getWidth() / 2) - 20, entity.getPos().y + entity.getBoundingBox().getHeight() + 4, entity.getHealth() * 8, 8);
+            renderer.rect(entity.getPos().x - (entity.getBoundingBox().getWidth() / 2) - 8, entity.getPos().y + entity.getBoundingBox().getHeight() + 4, entity.getHealth() * 8, 8);
             renderer.end();
         }
     }

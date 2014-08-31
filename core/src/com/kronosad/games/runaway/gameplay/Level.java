@@ -81,9 +81,15 @@ public class Level implements IRenderable {
 
         shapeRenderer.end();
         batch.begin();
+        drawDebugInformation(batch);
         for(Entity entity : entities){
             entity.render(batch);
         }
+    }
+
+    public void drawDebugInformation(SpriteBatch batch){
+        Game.drawString("Collisions: " + collisions.size(), batch, 0, Gdx.graphics.getHeight() - 15);
+        Game.drawString("Player Pos: " + entities.get(0).getPos(), batch, 0, Gdx.graphics.getHeight() - 30);
     }
 
     public void update(){

@@ -26,7 +26,7 @@ public class Player extends LivingEntity /** implements IAnimated **/ {
 
     public Player(Level level) {
         super(level);
-        Texture texture = new Texture("assets/character/player-right.png");
+        Texture texture = new Texture("assets/character/player-stick-right.png");
         sprite = new Sprite(texture);
 
         components.add(new GravityComponent(this));
@@ -60,12 +60,10 @@ public class Player extends LivingEntity /** implements IAnimated **/ {
         if (Gdx.input.isKeyPressed(Input.Keys.A) || Gdx.input.isKeyPressed(Input.Keys.LEFT)) {
             if(level.collidesWithTile(this, pos.x - 1, pos.y)) return;
             pos.x = pos.x - (MOVE_SPEED * Gdx.graphics.getDeltaTime());
-            sprite.setTexture(new Texture("assets/character/player-left.png"));
         }
         if (Gdx.input.isKeyPressed(Input.Keys.D) || Gdx.input.isKeyPressed(Input.Keys.RIGHT)) {
             if(level.collidesWithTile(this, pos.x + 1, pos.y)) return;
             pos.x = pos.x + (MOVE_SPEED * Gdx.graphics.getDeltaTime());
-            sprite.setTexture(new Texture("assets/character/player-right.png"));
         }
         if (Gdx.input.isKeyPressed(Input.Keys.SPACE)){
             jump();

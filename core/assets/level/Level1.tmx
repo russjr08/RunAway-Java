@@ -20,7 +20,7 @@
  </tileset>
  <layer name="Tile Layer 1" width="50" height="18">
   <data encoding="base64" compression="zlib">
-   eJxjYBgFo2AUjIJRMAqoC5hx4FEwCgiB0TQDASMl/wwXfw0Gf1AjrdDLH0zDBDMOEwwA0h8A1g==
+   eJxjYBgFo2AUjIJRMApGATbAjAOPAtqB0bCGgJGS7oaLvwaDP6iRVujlD6ZhghmHCQYAxA8A1g==
   </data>
  </layer>
  <objectgroup name="collisions" width="50" height="18">
@@ -29,7 +29,7 @@
     <property name="collision" value=""/>
    </properties>
   </object>
-  <object type="collision" x="224" y="257" width="191" height="30">
+  <object type="collision" x="223" y="289" width="191" height="30">
    <properties>
     <property name="collision" value=""/>
    </properties>
@@ -54,7 +54,7 @@
     <property name="collision" value=""/>
    </properties>
   </object>
-  <object x="14" y="432">
+  <object x="13" y="477">
    <properties>
     <property name="spawnpoint" value=""/>
    </properties>
